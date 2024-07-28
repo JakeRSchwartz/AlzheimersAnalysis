@@ -17,6 +17,34 @@ Our team decided to analyze the Alzheimer’s Disease dataset created by Rabei E
 Through this analysis we wanted to answer the question: Which factors are strongly associated with the diagnosis of Alzheimer's Disease? 
 
 ## Dataset Information:
+- Age: age of patients (60-90 years)
+- Gender: 0 if male or 1 if female 
+- Ethnicity: 0 - Caucasian, 1 - African American, 2 - Asian, 3 - other 
+- Education Level: 0 - None, 1 - High School, 2 - Bachelors, 3 - Higher
+- BMI: Body Mass Index (15 - 40)
+- Smoking: 0 - No, 1 - Yes
+- Physical Activity: Weekly physical activity (0 - 10 hrs)
+- DietQuality: Diet quality score (0 -10)
+- SleepQuality: Sleep quality score (4 - 10) 
+- Health History Variables (Categorical: 0 - No, 1 - Yes): 
+      - FamilyHistoryAlzheimers
+      - CardiovascularDisease
+      - Diabetes
+      - Depression 
+      - HeadInjury
+      - Hypertension
+- MMSE: Mini-Mental State Examination score (0 -30); lower score indicates cognitive impairment
+- FunctionalAsssessment: (0 -10); lower score indicates greater impairment
+- MemoryComplaints: 0 - No, 1- Yes
+- BehavioralProblems: 0 - No, 1 - Yes
+- ADL: Activities of Daily Living score, (0 -10); lower score indicates greater impairment
+- Symptom Variables (Categorical: 0 - No, 1 - Yes): 
+    - Confusion
+    - Disorientation
+    - PersonalityChanges 
+    - DifficultyCompletingTasks
+    - Forgetfulness
+- Diagnosis: Diagnosis Status for Alzheimer’s Disease; 0 - No, 1 - Yes
 
 
 
