@@ -13,11 +13,11 @@ knitr::opts_chunk$set(echo = TRUE)
 # Introduction 
 Our team decided to analyze the Alzheimer’s Disease dataset created by Rabei El Kharoua on Kaggle. We decided to proceed with this topic since Alzheimer’s is a very common illness without a cure that affects millions of people both directly and indirectly. This data set includes data from 2,149 patients and has 34 variables. 
 
-
 ## Main Question:
 Through this analysis we wanted to answer the question: Which factors are strongly associated with the diagnosis of Alzheimer's Disease? 
 
-## Dataset Information: 
+## Dataset Information:
+
 
 
 
