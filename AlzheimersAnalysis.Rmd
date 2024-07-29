@@ -57,7 +57,7 @@ The model employs the ReLU activation function, which enhances the efficiency of
 knitr::include_graphics("ReLu.png")
 ```
 
-The neural network model uses Binary Cross Entropy with Logits (BCE with Logits) to measure the loss between the predicted probabilities and the true labels. This function first applies a sigmoid activation to the raw, unnormalized outputs (logits) to convert them into probabilities. By combining the sigmoid function and BCE in a single step, BCE with Logits provides greater numerical stability compared to applying a sigmoid function followed by a separate BCE loss calculation. This approach ensures more reliable training, especially in neural networks 
+The neural network model uses Binary Cross Entropy with Logits (BCE with Logits) to measure the loss between the predicted probabilities and the true labels. This function first applies a sigmoid activation to the raw, unnormalized outputs (logits) to convert them into probabilities. By combining the sigmoid function and BCE in a single step, BCE with Logits provides greater numerical stability compared to applying a sigmoid function followed by a separate BCE loss calculation. This approach ensures more reliable training, especially in neural networks.
 
 ![BCE w/Logits Equation](BCE_LogitsEQ.png)
 
@@ -91,7 +91,7 @@ alzheimers_net = nn_module(
 )
 ```
 
-We evaluated the neural network model using a 10-fold cross-validation procedure, with each iteration consisting of 200 epochs. During the cross-validation, as the number of epochs approached 200, the loss consistently decreased, indicating effective learning. Utilizing the ReLU activation function and the BCE with Logits loss function, we achieved a final loss of 0.90%. This comprehensive evaluation resulted in a cross-validation classification accuracy of 98.37% and an error rate of 1.63%, demonstrating the model's strong predictive performance for identifying Alzheimer's in patients 
+We evaluated the neural network model using a 10-fold cross-validation procedure, with each iteration consisting of 200 epochs. During the cross-validation, as the number of epochs approached 200, the loss consistently decreased, indicating effective learning. Utilizing the ReLU activation function and the BCE with Logits loss function, we achieved a final loss of 0.90%. This comprehensive evaluation resulted in a cross-validation classification accuracy of 98.37% and an error rate of 1.63%, demonstrating the model's strong predictive performance for identifying Alzheimer's in patients.
 
 ```{r eval=FALSE}
 # Sample code loop: 
