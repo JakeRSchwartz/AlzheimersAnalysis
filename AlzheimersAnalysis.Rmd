@@ -41,12 +41,14 @@ Our team decided to analyze the Alzheimer’s Disease dataset created by Rabei E
     - PersonalityChanges 
     - DifficultyCompletingTasks
     - Forgetfulness\
-- Diagnosis: Diagnosis Status for Alzheimer’s Disease; 0 - No, 1 - Yes\
+- Diagnosis: Diagnosis Status for Alzheimer’s Disease; 0 - No, 1 - Yes
 
+# Neural Network:
+We chose to start with a Neural Network to 
 
-\newpage
+# Decision Tree:
+## Model Formula: 
 
-#Neural Network (Jake Schwartz, Alina Bangash):
 
 
 
