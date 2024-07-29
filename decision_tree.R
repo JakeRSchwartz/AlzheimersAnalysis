@@ -35,10 +35,10 @@ preprocess_data <- function(dataset) {
 }
 
 # split the data into training and test sets
-split_data <- function(dataset, split_ratio = 0.7, seed = 1) {
+split_data <- function(dataset, split_ratio = 0.8, seed = 1) {
   set.seed(seed)
   sample_index <- sample(seq_len(nrow(dataset)), size = split_ratio * nrow(dataset))  # create a random sample of row indices
-  train_data <- dataset[sample_index, ]  # assign 70% of the data to the training set
+  train_data <- dataset[sample_index, ]  # assign 80% of the data to the training set
   test_data <- dataset[-sample_index, ]  # assign the remaining 30% of the data to the test set
   return(list(train = train_data, test = test_data))
 }
