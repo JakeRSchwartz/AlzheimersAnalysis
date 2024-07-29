@@ -49,6 +49,8 @@ Our team decided to analyze the Alzheimer’s Disease dataset created by Rabei E
   
   ![Neural Network Diagram](NeuralNet.png)
   
+## Model Information
+  
   The model employs the ReLU activation function, which enhances the efficiency of training and the overall performance of neural networks, particularly when dealing with non-linear data. ReLU introduces non-linearity by allowing positive values to pass through unchanged while setting negative values to zero. This not only accelerates the convergence of the training process but also helps mitigate the vanishing gradient problem, a common issue in deep networks. The ReLU improves the network's ability to learn complex patterns and relationships within the data.
 
 ```{r, echo=FALSE, fig.align='center'}
@@ -64,6 +66,8 @@ The neural network model uses Binary Cross Entropy with Logits (BCE with Logits)
 ```{r, echo=FALSE, fig.align='center'}
 knitr::include_graphics("sigmoid.png")
 ```
+
+## Model in Code
 
 Using the PyTorch library in R, we created our neural network model with the nn_module, defining the specifics of the layers and functions. The complete neural network architecture designed to predict Alzheimer's in patients includes an input layer with 32 nodes, a first hidden layer with 64 nodes, a second hidden layer with 32 nodes, and an output layer with a single node that produces a binary output (Yes or No). This structure allows the model to effectively learn from the input features and make accurate predictions.
 
@@ -121,6 +125,7 @@ for (i in 1:k) {
 }
 ```
 
+## Conclusion
 
 Next, we visualized the loss for each training fold and epoch. We observed that around the 200th epoch, the loss began to plateau, indicating that additional training did not significantly reduce the loss further. Overall, the model demonstrated strong accuracy in predicting whether a person has Alzheimer's, showcasing its effectiveness and reliability for this classification task.
 
