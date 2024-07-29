@@ -48,6 +48,8 @@ Our team decided to analyze the Alzheimer’s Disease dataset created by Rabei E
   First, let's examine our neural network model, which predicts whether a person has Alzheimer's based on various input variables. The model starts with 32 input features, which are processed through two hidden layers before reaching the output layer. Each connection between nodes has an associated weight, representing the importance of the input variables in making predictions as they pass through the hidden layers. Additionally, each node includes a bias term, a constant value that helps adjust the output along with the weighted input, improving the model's accuracy and flexibility. 
   
   ![Neural Network Diagram](NeuralNet.png)
+
+## Model Information
   
 ## Model Information
   
