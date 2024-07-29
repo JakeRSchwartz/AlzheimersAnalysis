@@ -49,6 +49,8 @@ We chose to start with a Neural Network to
 # Decision Tree:
 ## Model Formula: 
 
+# Conclusion: 
+
 
 
 
