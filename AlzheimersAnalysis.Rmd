@@ -134,7 +134,6 @@ Next, we visualized the loss for each training fold and epoch. We observed that 
 ```{r, echo=FALSE, fig.align='center'}
 knitr::include_graphics("Epoch_training_loss.png")
 ```
-We chose to start with a Neural Network to 
 
 # Decision Tree:
 
