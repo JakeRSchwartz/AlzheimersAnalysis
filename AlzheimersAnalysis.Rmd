@@ -57,11 +57,9 @@ The model employs the ReLU activation function, which enhances the efficiency of
 knitr::include_graphics("ReLu.png")
 ```
 
-
 The neural network model uses Binary Cross Entropy with Logits (BCE with Logits) to measure the loss between the predicted probabilities and the true labels. This function first applies a sigmoid activation to the raw, unnormalized outputs (logits) to convert them into probabilities. By combining the sigmoid function and BCE in a single step, BCE with Logits provides greater numerical stability compared to applying a sigmoid function followed by a separate BCE loss calculation. This approach ensures more reliable training, especially in neural networks 
 
 ![BCE w/Logits Equation](BCE_LogitsEQ.png)
-
 
 ```{r, echo=FALSE, fig.align='center'}
 knitr::include_graphics("sigmoid.png")
@@ -70,7 +68,6 @@ knitr::include_graphics("sigmoid.png")
 ## Model in Code
 
 Using the PyTorch library in R, we created our neural network model with the nn_module, defining the specifics of the layers and functions. The complete neural network architecture designed to predict Alzheimer's in patients includes an input layer with 32 nodes, a first hidden layer with 64 nodes, a second hidden layer with 32 nodes, and an output layer with a single node that produces a binary output (Yes or No). This structure allows the model to effectively learn from the input features and make accurate predictions.
-
 
 ```{r eval=FALSE}
 library(torch)
@@ -94,9 +91,7 @@ alzheimers_net = nn_module(
 )
 ```
 
-
 We evaluated the neural network model using a 10-fold cross-validation procedure, with each iteration consisting of 200 epochs. During the cross-validation, as the number of epochs approached 200, the loss consistently decreased, indicating effective learning. Utilizing the ReLU activation function and the BCE with Logits loss function, we achieved a final loss of 0.90%. This comprehensive evaluation resulted in a cross-validation classification accuracy of 98.37% and an error rate of 1.63%, demonstrating the model's strong predictive performance for identifying Alzheimer's in patients 
-
 
 ```{r eval=FALSE}
 # Sample code loop: 
