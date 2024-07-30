@@ -140,23 +140,25 @@ knitr::include_graphics("Epoch_training_loss.png")
 
 Our second model will be using a decision tree to evaluate which variables are strongly associated with Alzheimer’s disease. By utilizing a decision tree, we can easily interpret data and be able to deal with non-linear relationships. Additionally, decision trees have proven to handle categorical data effectively. However, this model can lead to high variance, which can be managed with appropriate techniques.
 
-^PICTURE OF DECISION TREE^
 
 ## Model Formula: 
 Our model formula for the decision tree is: \
 *Diagnosis ~ PatientID + Age + Gender + Ethnicity + ... + DificultyCompletingTasks + Forgetfulness + Diagnosis + DoctorInCharge*
 
 We decided to go forth with a decision tree since our response variable is qualitative. For the unpruned tree, we decided to use all thirty-five variables. Using this tree-based model allowed for an easier understanding of which factors are associated with the diagnosis of Alzheimer's Disease and through the classification tree, we can get a better understanding of which factors are most important through pruning. \
-
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("unprunedtree.png")
+```
 ```{r}
 library(tree)
 
 build_decision_tree <- function(train_data) {
-  decision_tree <- tree(Diagnosis ~ ., data = train_data)  # build d_tree using training data
+  decision_tree <- tree(Diagnosis ~ ., data = train_data)
   return(decision_tree)
 }
 
 ```
+
 
 # Conclusion: 
 
