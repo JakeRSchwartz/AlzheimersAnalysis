@@ -2,7 +2,7 @@ install.packages("tree")
 
 library(tree) 
 
-dataset <- read.csv("Downloads/alzheimers_disease_data.csv")
+dataset <- read.csv("alzheimers_disease_data.csv")
 
 # display the structure of the dataset
 str(dataset)
@@ -74,3 +74,12 @@ print(paste("accuracy:", accuracy))
 
 # plot tree size vs deviance
 plot(cv_tree$size, cv_tree$dev, type = "b", xlab = "Tree Size", ylab = "Deviance")
+ 
+#summary of base tree
+summary(decision_tree)
+
+#summary of prunned tree
+summary(pruned_tree)
+
+print(cv_tree)
+
