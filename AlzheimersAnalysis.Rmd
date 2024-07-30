@@ -166,13 +166,12 @@ knitr::include_graphics("prunetree.png")
 knitr::include_graphics("prunnedtree.png")
 ```
 
-For the pruned tree, we decided that thirteen variables had to be prunned and only used five variables while constructing the tree. Also, there were six less terminal nodes compared to the base tree, which can ultimately reduce overfitting the data. Using the pruned training dataset, we observed a 96.22% accuracy rate and an error rate of 3.78%, demonstrating a more accurate ability to predict the diagnosis of Alzheimer's Disease within a person. 
+For the pruned tree, we decided that thirteen variables had to be prunned and only used five variables while constructing the tree. Also, there were six less terminal nodes compared to the base tree, which can ultimately reduce overfitting the data. Using the pruned training dataset, we observed a 96.22% accuracy rate and an error rate of 3.78%, demonstrating a more accurate ability to predict the diagnosis of Alzheimer's Disease within a person. Additionally, the pruned tree model highlights the key predictor variables significantly impacting Alzheimer's detection. These variables include Functional Assessment, Mini-Mental State Examination Score (MMSE), Activities of Daily Living Score (ADL), Behavioral Problems, and Memory Complaints. 
 
 # Conclusion: 
 
 Overall, our comparison of the decision tree model and the neural network model yielded positive results. Both models achieved high accuracy rates in predicting the likelihood of developing Alzheimer's disease.  The neural network model achieved an impressive accuracy rate of 98.37% and an error rate of just 1.63%. With a final loss rate of 0.90%, this demonstrates the model's exceptional ability to identify Alzheimer's disease in patients. Additionally, the decision tree model achieved high accuracy rates as well. The decision tree model was able to obtain an accuracy rate of 93.95% and an error rate of 6.04%. After pruning, the accuracy rate became 96.22% and the error rate became 3.78%.  This shows that while the pruned decision tree model achieved improved accuracy, the neural network model outperformed both in terms of accuracy. Therefore, the neural network model is more effective for predicting and identifying Alzheimer's disease in patients.
 
-^^MAYBE ADD MORE IDKK
 
 \newpage
 
