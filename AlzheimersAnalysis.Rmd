@@ -43,7 +43,7 @@ Our team decided to analyze the Alzheimer’s Disease dataset created by Rabei E
     - Forgetfulness\
 - Diagnosis: Diagnosis Status for Alzheimer’s Disease; 0 - No, 1 - Yes
 
-# Neural Network (Jake Schwartz, Sana Akhtar, Alina Bangash)
+# Neural Network (Jake Schwartz, Sana Akhtar)
 
 First, let's examine our neural network model, which predicts whether a person has Alzheimer's based on various input variables. The model starts with 32 input features, which are processed through two hidden layers before reaching the output layer. Each connection between nodes has an associated weight, representing the importance of the input variables in making predictions as they pass through the hidden layers. Additionally, each node includes a bias term, a constant value that helps adjust the output along with the weighted input, improving the model's accuracy and flexibility. 
   
@@ -138,8 +138,7 @@ knitr::include_graphics("Epoch_training_loss.png")
 
 # Decision Tree (Jeremy Udo, Alina Bangash, Sneha Jacob):
 
-Our second model will be using a decision tree to evaluate which variables are strongly associated with Alzheimer’s disease. By utilizing a decision tree, we can easily interpret data and be able to deal with non-linear relationships. Additionally, decision trees have proven to handle categorical data effectively. However, this model can lead to high variance, which can be managed with appropriate techniques.
-
+Our second model will be using a decision tree to evaluate which variables are strongly associated with Alzheimer’s disease. We selected this model because our response variable is qualitative, and decision trees are well-suited for this type of data. By utilizing a decision tree, we can easily interpret data and be able to deal with non-linear relationships. Decision trees have proven to handle categorical data effectively and can easily visualize the probability of developing Alzheimer's disease by using all of the predictors. Additionally, with this model, we are able to prune the tree in order to improve the model and the error rate. We initially started with a decision tree model and then applied pruning to enhance its performance. We then compared the results of both models to evaluate the effectiveness of decision trees in predicting the likelihood of developing Alzheimer's disease.
 
 ## Model Formula: 
 Our model formula for the decision tree is: \
