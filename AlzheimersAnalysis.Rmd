@@ -128,7 +128,7 @@ Next, we visualized the loss for each training fold and epoch. We observed that 
 knitr::include_graphics("Epoch_training_loss.png")
 ```
 
-# Decision Tree:
+# Decision Tree (Jeremy Udo, Alina Bangash, Sneha Jacob):
 
 ## Model Formula: 
 Our model formula for the decision tree is: \
