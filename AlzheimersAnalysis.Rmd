@@ -160,7 +160,17 @@ build_decision_tree <- function(train_data) {
 
 For this base tree we had preprocessed the data to remove any rows with missing values and then split the dataset into eighty percent for training and the remaining twenty for testing. Using the training set we visualized and evaluated the decision tree and noticed a 93.95% accuracy rate and an error rate of 6.04%, demonstrating the unpruned tree's ability to accurately predict whether or not a person is diagnosed with Alzheimer's Disease. 
 
+
+```{r, echo=FALSE, fig.align='center'}
+knitr::include_graphics("prunnedtree.png")
+```
+```{r}
+
 # Conclusion: 
+
+Overall, our comparison of the decision tree model and the neural network model yielded positive results. Both models achieved high accuracy rates in predicting the likelihood of developing Alzheimer's disease.  The neural network model achieved an impressive accuracy rate of 98.37% and an error rate of just 1.63%. With a final loss rate of 0.90%, this demonstrates the model's exceptional ability to identify Alzheimer's disease in patients. Additionally, the decision tree model achieved high accuracy rates as well. The decision tree model was able to obtain an accuracy rate of 93.95% and an error rate of 6.04%. After pruning, the accuracy rate became BLANK and the error rate became BLANK.  This shows that while the pruned decision tree model achieved improved accuracy, the neural network model outperformed both in terms of accuracy. Therefore, the neural network model is more effective for predicting and identifying Alzheimer's disease in patients.
+
+^^MAYBE ADD MORE IDKK
 
 
 
