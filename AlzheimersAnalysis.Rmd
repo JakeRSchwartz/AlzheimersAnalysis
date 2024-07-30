@@ -158,8 +158,8 @@ build_decision_tree <- function(train_data) {
 }
 
 ```
-\ 
-For this base tree we had a 93.95% accuracy rate and an error rate of 6.04%, demonstrating the unpruned trees ability to accurately predict whether or not a person is diagnosed with Alzheimer's Disease. 
+
+For this base tree we had preprocessed the data to remove any rows with missing values and then split the dataset into eighty percent for training and the remaining twenty for testing. Using the training set we visualized and evaluated the decision tree and noticed a 93.95% accuracy rate and an error rate of 6.04%, demonstrating the unpruned tree's ability to accurately predict whether or not a person is diagnosed with Alzheimer's Disease. 
 
 # Conclusion: 
 
