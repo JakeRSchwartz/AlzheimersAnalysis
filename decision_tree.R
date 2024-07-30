@@ -62,10 +62,12 @@ evaluate_model <- function(decision_tree, test_data) {
   print(confusion_matrix)  # print the confusion matrix
   accuracy <- sum(diag(confusion_matrix)) / sum(confusion_matrix)  # calculate the accuracy of the model
   print(paste("accuracy:", accuracy))  # print the accuracy of the model
+  error_rate <- 1 - accuracy # find the error rate 
+  print(paste("error rate:", error_rate)) # print error rate
 }
 
 main <- function() {
-  dataset <- load_and_inspect_data("Downloads/alzheimers_disease_data.csv")
+  dataset <- load_and_inspect_data("alzheimers_disease_data.csv")
   dataset <- preprocess_data(dataset)
   data_splits <- split_data(dataset)
   train_data <- data_splits$train
@@ -76,3 +78,4 @@ main <- function() {
 }
 
 main()
+
