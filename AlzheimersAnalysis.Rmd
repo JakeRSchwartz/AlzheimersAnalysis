@@ -48,6 +48,15 @@ We chose to start with a Neural Network to
 
 # Decision Tree:
 ## Model Formula: 
+Our model formula for the decision tree is: \
+*Diagnosis ~ PatientID + Age + Gender + Ethnicity + ... + DificultyCompletingTasks + Forgetfulness + Diagnosis + DoctorInCharge*
+
+We decided to go forth with a decision tree since our response variable is qualitative. For the unpruned tree, we decided to use all thirty-five variables. Using this tree-based model allowed for an easier undestanding of which factors are associated with the diagnosis of Alzhiemer's Disease and through the classification tree, we can get a better understanding of which factors are most important through pruning. 
+
+```{r}
+library(tree)
+
+```
 
 # Conclusion: 
 
