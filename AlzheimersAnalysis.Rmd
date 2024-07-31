@@ -179,6 +179,7 @@ Overall, our comparison of the decision tree model and the neural network model 
 
 Kharoua, Rabie El. “Alzheimer’s Disease Dataset.” Kaggle, 11 June 2024,  
   www.kaggle.com/datasets/rabieelkharoua/alzheimers-disease-dataset.
+“BCEWITHLOGITSLOSS¶.” BCEWithLogitsLoss - PyTorch 2.4 documentation. Accessed July 22,       2024. https://pytorch.org/docs/stable/generated/torch.nn.BCEWithLogitsLoss.html. 
 
 
 
